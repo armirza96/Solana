@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_main.xml" value="0.490036231884058" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/fragment_dashboard.xml" value="0.2947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/fragment_home.xml" value="0.5427083333333333" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/list_item_cell_info.xml" value="0.5427083333333333" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/list_item_graph.xml" value="0.5427083333333333" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/layout/list_item_time_bar.xml" value="0.5427083333333333" />
+        <entry key="..\:/AndroidStudioProjects/Solana/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5427083333333333" />
       </map>
     </option>
   </component>
