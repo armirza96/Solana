@@ -10,11 +10,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 import com.winners.solana.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<DatabaseReference> extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+
+    private FirebaseUser mUser;
+    private DatabaseReference databaseReference;
+
+    databaseReference = FirebaseDatabase.getReference("logs");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
