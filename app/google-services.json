@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "407811268229",
+    "firebase_url": "https://coen390-19e55-default-rtdb.firebaseio.com",
+    "project_id": "coen390-19e55",
+    "storage_bucket": "coen390-19e55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407811268229:android:71e70b20f7027ed06153ec",
+        "android_client_info": {
+          "package_name": "com.winners.solana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407811268229-f7d9339il6m10soukjcvdu9eufo40c1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRlxOVvRSM5XmXlGLyX7TkVe_q7jOIa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407811268229-f7d9339il6m10soukjcvdu9eufo40c1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
