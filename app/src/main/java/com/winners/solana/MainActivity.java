@@ -10,7 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.google.firebase.auth.FirebaseUser;
+//import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.winners.solana.databinding.ActivityMainBinding;
 
@@ -18,10 +18,10 @@ public class MainActivity<DatabaseReference> extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
-    private FirebaseUser mUser;
-    private DatabaseReference databaseReference;
+    //private FirebaseUser mUser;
+    //private DatabaseReference databaseReference;
+    //FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-    databaseReference = FirebaseDatabase.getReference("logs");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,11 @@ public class MainActivity<DatabaseReference> extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        //databaseReference = FirebaseDatabase.getReference("logs");
+
+
+        //myRef.setValue("Hello, World!");
     }
 
 }
