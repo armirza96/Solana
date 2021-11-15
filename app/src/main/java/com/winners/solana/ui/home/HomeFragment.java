@@ -77,7 +77,7 @@ public class HomeFragment extends Fragment {
                 //String value = dataSnapshot.getValue((HashMap<String, Float>).class);
                 HashMap<String, Double> map = (HashMap<String, Double>) dataSnapshot.getValue();
                 Double val = map.get("UV Index");
-                tv_time.setText(val.toString());
+                tv_time.setText(val.toString() + " mW/cm^2");
                 Log.d(TAG, "Value is: " + val);
             }
 
