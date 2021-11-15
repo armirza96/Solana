@@ -3,7 +3,7 @@
 
 // Set these to run example.
 #define FIREBASE_HOST "coen390-19e55-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "W2yOZCK8fqta12aLTPDmv6Ld8iB3Rjfp3rtpR3rq"
+#define FIREBASE_AUTH "secret"
 #define WIFI_SSID "your wifi ssid"
 #define WIFI_PASSWORD "your wifi password"
 
