@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="#7DB85D">
+    android:background="#2DDADFE1"
     android:id="@+id/background">
 
     <TextView
         android:id="@+id/tv_value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:text="95%"
-        android:textSize="24sp"
         android:textAlignment="textStart"
         android:textSize="48sp"
         android:textStyle="bold"
