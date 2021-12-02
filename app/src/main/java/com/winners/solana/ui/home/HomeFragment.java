@@ -162,6 +162,9 @@ public class HomeFragment extends Fragment {
         CellItem energyItem = new CellItem("Energy (mWh)",energy.toString(), getResources().getColor(R.color.solrGray), getResources().getColor(R.color.solrTextColor));
         CellItem powerItem = new CellItem("Power (mW)",power.toString(), getResources().getColor(R.color.solrGray), getResources().getColor(R.color.solrTextColor));
 
+        if(uv < 0)
+            uv = 0.0;
+        
         CellItem uvItem = new CellItem("UV Index (mw/cm^2)",uv.toString(), getResources().getColor(R.color.solrGray), getResources().getColor(R.color.solrTextColor));
         CellItem angleItem = new CellItem("Angle (degrees)",angle.toString(), getResources().getColor(R.color.solrGray), getResources().getColor(R.color.solrTextColor));
 
