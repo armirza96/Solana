@@ -1,7 +1,9 @@
 package com.winners.solana;
 
+import com.google.firebase.database.Exclude;
+
 public class User {
-    public String Username;
+    private String Username;
 
     public User(String username) {
         Username = username;
@@ -9,6 +11,7 @@ public class User {
 
     public User() {
     }
+
 
     public String getUsername() {
         return Username;

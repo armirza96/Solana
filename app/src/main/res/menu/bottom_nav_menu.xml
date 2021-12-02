@@ -11,9 +11,9 @@
 <!--        android:icon="@drawable/ic_dashboard_black_24dp"-->
 <!--        android:title="@string/title_dashboard" />-->
 
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="Settings" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_notifications"-->
+<!--        android:icon="@android:drawable/ic_menu_manage"-->
+<!--        android:title="Settings" />-->
 
 </menu>

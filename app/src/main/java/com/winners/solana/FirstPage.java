@@ -62,6 +62,8 @@ public class FirstPage extends AppCompatActivity {
 
                             Intent intent = new Intent(FirstPage.this, MainActivity.class);
                             startActivity(intent);
+
+                            finish();
                         } else {
                             Toast.makeText(FirstPage.this, "Account not logged in", Toast.LENGTH_LONG).show();
                         }

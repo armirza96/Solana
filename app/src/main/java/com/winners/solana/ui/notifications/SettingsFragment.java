@@ -42,7 +42,7 @@ public class SettingsFragment extends Fragment {
         View root = binding.getRoot();
 
         Button btnSave = binding.btnSave;
-        EditText username = binding.username;
+        EditText etUsername = binding.username;
         TextView email = binding.email;
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
@@ -53,8 +53,8 @@ public class SettingsFragment extends Fragment {
                 //databaseReference = FirebaseDatabase.getInstance().getReference("Users");
                 User userProfile = snapshot.getValue(User.class);
 
-                username.setText(userProfile.getUsername());
-                email.setText(userProfile.getUsername());
+                etUsername.setText(userProfile.getUsername());
+                //email.setText(userProfile.getUsername());
             }
 
             @Override
@@ -67,7 +67,7 @@ public class SettingsFragment extends Fragment {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String u = username.getText().toString();
+                String u = etUsername.getText().toString();
 
                 databaseReference.child(uID).child("username").setValue(u);
             }
