@@ -3,9 +3,7 @@ package com.winners.solana;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,10 +17,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class SignupActivity extends AppCompatActivity {
+public class SignUp2 extends AppCompatActivity {
 
     private Button Signup;
-    private EditText username;
+    private EditText email;
     private EditText password;
     private FirebaseUser mUser;
     private FirebaseAuth mAuth;
@@ -33,15 +31,14 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_sign_up2);
 
         mAuth = FirebaseAuth.getInstance();
 
-        Signup = findViewById(R.id.Signup);
-        username = findViewById(R.id.Username);
-        password = findViewById(R.id.Password);
-        String Username =  username.getEditableText().toString();
-        String Password = password.getEditableText().toString();
+        Signup = findViewById(R.id.btnSignUp);
+        email = findViewById(R.id.email);
+        password = findViewById(R.id.pass);
+
 
         Signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,35 +62,37 @@ public class SignupActivity extends AppCompatActivity {
 //                        }
 //                    }
 //                });
+                String Email =  email.getEditableText().toString();
+                String Password = password.getEditableText().toString();
 
-                mAuth.createUserWithEmailAndPassword(Username, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                mAuth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            User user = new User(Username);
+                            User user = new User(Email);
 
-//                            FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-//                                    .setValue(Username)
-//                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                                        @Override
-//                                        public void onComplete(@NonNull Task<Void> task) {
-//                                            if (task.isSuccessful()) {
-//
-//                                                Toast.makeText(SignupActivity.this, "Good", Toast.LENGTH_LONG).show();
-////                                                Intent intent = new Intent(SignupActivity.this, MainActivity.class);
-////                                                startActivity(intent);
-//                                                finish();
-//                                            } else {
-//                                                Toast.makeText(SignupActivity.this, "Good", Toast.LENGTH_LONG).show();
-//
-//                                            }
-//                                        }
-//                                    });
+                            FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(Email)
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if (task.isSuccessful()) {
+
+                                                Toast.makeText(SignUp2.this, "User gotten", Toast.LENGTH_LONG).show();
+//                                                Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+//                                                startActivity(intent);
+                                                finish();
+                                            } else {
+                                                Toast.makeText(SignUp2.this, "User was not able to be successfully", Toast.LENGTH_LONG).show();
+
+                                            }
+                                        }
+                                    });
                         }
                         else {
-                            Toast.makeText(SignupActivity.this, "Account not Created", Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUp2.this, "Account not Created", Toast.LENGTH_LONG).show();
 
                         }
 

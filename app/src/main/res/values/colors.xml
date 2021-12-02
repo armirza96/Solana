@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="solrGray">#2DDADFE1</color>
+    <color name="solrRed">#FF6B6B</color>
+    <color name="solrGreen">#1dd1a1</color>
+    <color name="solrTextColor">#222f3e</color>
 </resources>
