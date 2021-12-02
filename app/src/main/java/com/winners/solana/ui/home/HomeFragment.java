@@ -98,13 +98,20 @@ public class HomeFragment extends Fragment {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 //String value = dataSnapshot.getValue((HashMap<String, Float>).class);
-                HashMap<String, Double> map = (HashMap<String, Double>) dataSnapshot.getValue();
+                //HashMap<String, Double> map = (HashMap<String, Double>) dataSnapshot.getValue();
+            //    HashMap<String, Double> map = (HashMap<String, Double>) dataSnapshot.getValue();
 
-                Double uv = (double) Math.round(map.get("UV Index") * 100) / 100;
-                Double energy = (double) Math.round(map.get("Energy") * 100) / 100;
-                Double power = (double) Math.round(map.get("Power") * 100) / 100;
-                Double angle = (double) Math.round(map.get("Angle") * 100) / 100;
+//                Double uv = (double) Math.round(map.get("UV Index") * 100) / 100;
+//                Double energy = (double) Math.round(map.get("Energy") * 100) / 100;
+//                Double power = (double) Math.round(map.get("Power") * 100) / 100;
+//                Double angle = (double) Math.round(map.get("Angle") * 100) / 100;
 
+                HashMap<String, String> map = (HashMap<String, String>) dataSnapshot.getValue();
+
+                Double uv = (double) Math.round(Double.parseDouble(map.get("UV Index")) * 100) / 100;
+                String energy = map.get("Energy");
+                Double power = (double) Math.round(Double.parseDouble(map.get("Power")) * 100) / 100;
+                String angle = map.get("Angle");
 
 //                HashMap<String, Long> map = (HashMap<String, Long>) dataSnapshot.getValue();
 //
@@ -128,7 +135,8 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    private Adapter setUpAdapter(Double energy, Double power, Double uv, Double angle) {
+    private Adapter setUpAdapter(String energy, Double power, Double uv, String angle) {
+    //private Adapter setUpAdapter(Double energy, Double power, Double uv, Double angle) {
     //private Adapter setUpAdapter(Long energy, Long power, Long uv, Long angle) {
         ArrayList<CellItem> cellItems = new ArrayList<CellItem>();
         ArrayList<CardItem> cardItems = new ArrayList<CardItem>();
