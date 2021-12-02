@@ -14,9 +14,13 @@
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/drawable/ic_main_background2.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_first_page.xml" value="0.17910447251321387" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_main.xml" value="0.15761193581162822" />
+        <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_signup.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_splash_screen.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/activity_splash_screen2.xml" value="0.19270833333333334" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/fragment_dashboard.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/fragment_home.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/Huang/AndroidStudioProjects/Solana/app/src/main/res/layout/fragment_notifications.xml" value="0.20677083333333332" />
